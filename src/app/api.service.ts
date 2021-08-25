@@ -19,7 +19,7 @@ export class ApiCallService {
   }
 
   addPost(data :any){
-    return this.http.post('http://localhost:8080/articles/createArticle',data)
+    return this.http.post('http://localhost:8080/articles/addArticle',data)
     .pipe(map((res : any)=>{
         return res;
     }))
